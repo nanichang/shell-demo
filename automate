@@ -4,9 +4,9 @@ git init
 git add .
 git commit -m "project start"
 git remote add origin git@github.com:nanichang/shell-demo.git
-git push
+git push origin main
 git checkout -b test-branch
-touch testfile
+echo 'Test' >>  testfile
 git add .
 git commit -m "another file"
 git push origin test-branch
