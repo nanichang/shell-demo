@@ -1,0 +1,12 @@
+#!/bin/bash
+
+git init
+git add .
+git commit -m "project start"
+git remote add origin git@github.com:nanichang/shell-demo.git
+git push
+git checkout -b test-branch
+touch testfile
+git add .
+git commit -m "another file"
+git push origin test-branch
